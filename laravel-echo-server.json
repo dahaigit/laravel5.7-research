@@ -1,0 +1,39 @@
+{
+	"authHost": "http://la57.com",
+	"authEndpoint": "/broadcasting/auth",
+	"clients": [
+		{
+			"appId": "b3726d0ddf7355fd",
+			"key": "94ccf00f1d109ba44f3388d0a5bf815a"
+		}
+	],
+	"database": "redis",
+	"databaseConfig": {
+		"redis": {
+            "port": "6379",
+            "host": "127.0.0.1"
+        },
+		"sqlite": {
+			"databasePath": "/database/laravel-echo-server.sqlite"
+		}
+	},
+	"devMode": false,
+	"host": "la57.com",
+	"port": "6001",
+	"protocol": "http",
+	"socketio": {},
+	"sslCertPath": "",
+	"sslKeyPath": "",
+	"sslCertChainPath": "",
+	"sslPassphrase": "",
+	"subscribers": {
+		"http": true,
+		"redis": true
+	},
+	"apiOriginAllow": {
+		"allowCors": true,
+		"allowOrigin": "la57.com",
+		"allowMethods": "GET,POST",
+		"allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+	}
+}
